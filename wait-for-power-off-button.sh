@@ -9,6 +9,10 @@
 # Momentary switch is connected between physical pins 25 and 26 on
 # the GPIO header
 #
+# Script lives at:
+#
+# /home/pi/off-button/
+#
 # This script is added to crontab (with crontab -e) as follows:
 #
 # @reboot /home/pi/off-button/wait-for-power-off-button.sh
