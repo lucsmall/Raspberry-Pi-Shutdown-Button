@@ -1,0 +1,21 @@
+Raspberry Pi shutdown button
+Luc Small
+lucsmall.com
+20150422
+
+Watch the youtube video: https://youtu.be/Ns0JdZrXwdk
+
+Waits for a button press and then shuts down Raspberry Pi
+
+Momentary switch is connected between physical pins 25 and 26 on
+the GPIO header
+
+Script lives at:
+
+/home/pi/off-button/
+
+This script is added to crontab (with crontab -e) as follows:
+
+@reboot /home/pi/off-button/wait-for-power-off-button.sh
+
+All output goes to stdout and log file
