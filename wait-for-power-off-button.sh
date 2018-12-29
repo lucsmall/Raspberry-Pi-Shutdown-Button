@@ -31,7 +31,7 @@ echo Reboot at `date` - waiting...
 sudo python - <<END
 import time
 import RPi.GPIO as gpio
-# Set pin numbering to board numbering
+# Set pin numbering to 'Broadcom SOC channel' numbering
 gpio.setmode(gpio.BCM)
 # Set up pin 7 as an input
 # enable pullups
